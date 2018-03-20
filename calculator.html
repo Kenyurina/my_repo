@@ -1,41 +1,31 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title><meta charset="utf-8">
+		<script type="text/javascript">
+			function cube() {
+			var num = document.getElementById("n1");
+			num.value = Math.pow(num.value, 3);
+			}
+			function sin() {
+			var num = document.getElementById("n1");
+			num.value = sin(num.value);
+			}
+			function cua() {
+			var num = document.getElementById("n1");
+			num.value = Math.pow(num.value, 4);
+			}
+		</script>
+	</head>
 
-<title>Calculator</title><meta charset="utf-8">
-
-<script type="text/javascript">
-
-function cube() {
-
-var num = document.getElementById("n1");
-
-num.value = Math.pow(num.value, 3);
-
-}
-
-function sin() {
-
-var num = document.getElementById("n1");
-
-num.value = sin(num.value);
-
-}
-</script>
-
-</head>
-
-<body>
-<h1>Calculadora de ……Kenyuri Camino……</h1>
-
-Number:
-
-<input type="text" id="n1"><p>
-
-<button onclick="cube()"> x^3 </button>
-
-<button onclick="sin()"> sin(x) </button>
-
-</body>
-
+	<body>
+		<h1>Calculadora de ……Kenyuri Camino……</h1>
+		Number:
+		<input type="text" id="n1"><p>
+		<button onclick="cube()"> x^3 </button>
+		<button onclick="cua()"> x^4 </button>
+		<button onclick="sin()"> sin(x) </button>
+	</body>
 </html>
 
  
